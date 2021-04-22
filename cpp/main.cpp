@@ -27,33 +27,7 @@ typedef pair<int,int> pi;
 void solve()
 {
     tc{
-        ll n , k;
-        cin>>n>>k;
-        ll arr[n];
-        for(int i=0;i<n;i++){
-            cin>>arr[i];
-        }
 
-        if(n>2){
-            ll p {0}, q {n-1};
-            while(arr[p] == 0){
-                p++;
-            }
-            while(arr[q] == 0){
-                q--;
-            }
-            arr[p] -=1;
-            arr[q] +=1;
-        }else{
-            arr[0] -=1;
-            arr[1] +=1;
-        }
-
-        for(int i=0;i<n;i++){
-            cout<<arr[i]<<" ";
-        }
-
-        cout<<endl;
 
     }
 }
