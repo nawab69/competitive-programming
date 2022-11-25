@@ -27,18 +27,14 @@ typedef pair<int,int> pi;
 
 void solve()
 {
-    int limakWeight , limaksBrotherWeight, it = 0;
-    cin>>limakWeight>>limaksBrotherWeight;
-    
-
-    while(true){
-        if(limakWeight>limaksBrotherWeight) break;
-        limakWeight *=3;
-        limaksBrotherWeight *=2;
-        it++;
+    int testCase, totalSolved=0;
+    cin>>testCase;
+    while(testCase--){
+        int a,b,c;
+        cin>>a>>b>>c;
+        if(a+b+c >= 2) totalSolved++;
     }
-    cout<<it<<nn;
-
+    cout<<totalSolved<<nn;
 }
  
  

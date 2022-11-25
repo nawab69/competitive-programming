@@ -27,17 +27,22 @@ typedef pair<int,int> pi;
 
 void solve()
 {
-    int limakWeight , limaksBrotherWeight, it = 0;
-    cin>>limakWeight>>limaksBrotherWeight;
-    
+    int n, a = 0, d = 0;
+    string str;
+    cin>>n;
+    cin>>str;
 
-    while(true){
-        if(limakWeight>limaksBrotherWeight) break;
-        limakWeight *=3;
-        limaksBrotherWeight *=2;
-        it++;
+    std::string::iterator it;
+
+    for(it = str.begin(); it != str.end(); it++) {
+        if(*it == 'A') {
+            a++;
+        }
+        else if(*it == 'D') {
+            d++;
+        }
     }
-    cout<<it<<nn;
+    cout<<(a>d ? "Anton" : a<d ? "Danik" : "Friendship")<<nn;
 
 }
  
