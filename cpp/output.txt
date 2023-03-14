@@ -1,1 +1,7 @@
-1
+Enter the degree of the equation: Enter the cofficients of the equation: x^2 = 
+x^1 = 
+x^0 = 
+Enter the brackets
+x1 = x2 = 
+Enter the error: 
+Root is: 3.95253e-323
